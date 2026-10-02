@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catatan LAILA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <header class="header"> </header>
+        <section class="card">
+            <h2>Catatanku</h2>
+            <form id="form-catatan" onsubmit="inputdata(event)">
+                <label for="note">Isi catatan</label>
+                <input type="text" name="note" id="note" placeholder="Contoh: Belajar Local Storage" required>
+
+                <label for="label">Keterangan</label>
+                <select name="label" id="label" required>
+                    <option value="">Pilih keterangan</option>
+                    <option value="prioritas">Prioritas</option>
+                    <option value="medium">Medium</option>
+                </select>
+
+                <button class="submit-btn" type="submit">Kirim</button>
+            </form>   </form>
+        </section>
+
+        <section class="card daftar-card">
+                <button class="clear-btn" type="button" onclick="hapusSemua()">Hapus semua</button>
+            </div>
+            <ul id="data-tampil"></ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
